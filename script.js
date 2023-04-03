@@ -1,25 +1,22 @@
-let entrada =  prompt("SELECCIONAR UNA PRENDA DE 1 A 5 O ESC PARA SALIR");
-while (entrada != 'ESC') {
-    switch (entrada) {
-        case "1":
-            alert("zapatilla");
-            break;
-        case "2":
-            alert("short");
-            break;
-        case "3":
-            alert("Camiseta");
-            break;
-        case "4":
-            alert("medias");
-            break;
-        case "5":
-            alert("botines");
-            break;    
-        default:
-            alert("UPS, EL NRO SELECCIONADO DEBE ESTAR ENTRE 1 Y 5");
-            break;
+class ropa {
+    constructor(prenda, talle, color, stock) {
+        this.prenda = prenda;
+        this.talle = talle;
+        this.color = color;
+        this.stock = stock;
     }
-    entrada = prompt("SELECCIONAR UNA PRENDA DE 1 A 5 O ESC PARA SALIR");
 }
+const tienda = [];
+tienda.push(new ropa("camisa", 50 , "blanco", true));
+tienda.push(new ropa("remera", 48 , "negro", true));
+tienda.push(new ropa("pantalon", 52 , "azul", true));
+tienda.push(new ropa("short", 46 , "rojo", false));
+tienda.push(new ropa("zapatos", 40 , "marron", true));
+console.log(tienda);
+
+const resultado = tienda.find((el) => el.prenda === "remera")
+console.log (resultado)
+
+const resultado2 = tienda.filter((el) => el.talle < 50)
+console.log (resultado2)
 
