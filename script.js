@@ -33,3 +33,4 @@ console.log(resultado);
 const resultado1 = tienda.filter((el) => el.precio < 18000)
 console.log(resultado1);
 
+
