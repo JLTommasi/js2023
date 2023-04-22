@@ -49,15 +49,8 @@ const nuevoIngreso = (e) => {
     );
 
     tienda.push (nuevo)
-
-    console.log(nuevoIngreso)
-}
-stock.addEventListener ("submit", nuevoIngreso)
     
-
-    //tienda.push (nuevo)
-
-    /*let listaPrendas = document.getElementById ("listaPrendas")
+    let listaPrendas = document.getElementById ("listaPrendas")
     listaPrendas.innerHTML = "";
     tienda.forEach(ropa => {
         let li = document.createElement ("li")
@@ -67,26 +60,32 @@ stock.addEventListener ("submit", nuevoIngreso)
         Precio ${ropa.precio}`
 
         listaPrendas.appendChild (li)
-        
     })
 }
-listaPrendas.addEventListener ("submit", nuevoIngreso)
-/*function buscarTienda(ropa, prenda){
-    return ropa.find(objeto => objeto.prenda === prenda);
+stock.addEventListener ("submit", nuevoIngreso)
+
+
+//Local storage
+
+let baseDeDatos = tienda;
+let inventario = JSON.parse(localStorage.getItem("BD"));
+
+if (inventario === null) {
+    inventario= baseDeDatos;
+    localStorage.setItem("BD",JSON.stringify(inventario))
 }
 
-for (let index = 0; index < tienda.length; index++) {
-    let busqueda = buscarTienda(tienda, prompt("Ingresa el nombre de la prenda que quieras"));
-    if(busqueda != undefined){
-        alert("elegiste "+busqueda.prenda);
-    }else{
-        alert("En este momento no tenemos stock de la prenda solicitada");
-    }
-}
+let formulario = document.querySelector('#stock');
+let inputNombre =document.getElementById('nombre');
+let inputTalle =document.getElementById('talle');
+let inputColor =document.getElementById('color');
+let inputPrecio =document.getElementById('precio');
 
-const resultado = tienda.filter((el) => el.precio > 18000)
-console.log(resultado);
-const resultado1 = tienda.filter((el) => el.precio < 18000)
-console.log(resultado1);*/
+formulario.addEventListener('submit', function (event){
+    event.preventDefault();
+    let newProd = new ropa(inputNombre.value, inputTalle.value, inputColor.value, inputPrecio);
+    inventario.push(newProd);
+    localStorage.setItem("BD", JSON.stringify(inventario));
+})
 
 
