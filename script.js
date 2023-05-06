@@ -88,4 +88,3 @@ formulario.addEventListener('submit', function (event){
     localStorage.setItem("BD", JSON.stringify(inventario));
 })
 
-
