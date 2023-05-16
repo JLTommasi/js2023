@@ -1,0 +1,74 @@
+[
+    {
+        "id": "remera-river1",
+        "titulo": "Remera 1",
+        "imagen": "./img/remera1.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "remera-river2",
+        "titulo": "Remera 2",
+        "imagen": "./img/remera2.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "remera-river3",
+        "titulo": "Remera 3",
+        "imagen": "./img/remera3.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "remera-river5",
+        "titulo": "Remera 5",
+        "imagen": "./img/remera5.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river1",
+        "titulo": "Pantalon 1",
+        "imagen": "./img/pantalon1.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river2",
+        "titulo": "Pantalon 2",
+        "imagen": "./img/pantalon2.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river3",
+        "titulo": "Pantalon3",
+        "imagen": "./img/pantalon3.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river4",
+        "titulo": "Pantalon 4",
+        "imagen": "./img/pantalon4.webp",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river5",
+        "titulo": "Pantalon 5",
+        "imagen": "./img/pantalon5.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river6",
+        "titulo": "Pantalon 06",
+        "imagen": "./img/pantalon6.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river7",
+        "titulo": "Pantalon 7",
+        "imagen": "./img/pantalon7.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-river8",
+        "titulo": "Pantalon 8",
+        "imagen": "./img/pantalon8.jpg",
+        "precio": 1000
+    }
+]
